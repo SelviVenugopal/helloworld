@@ -10,5 +10,9 @@ public class SpringbootHelloApplication {
 		SpringApplication.run(SpringbootHelloApplication.class, args);
 		System.out.println("hello");
 	}
+	 @GetMapping("/greet")
+    public String greet() {
+        return "Hello from Spring Boot!";
+    }
 
 }
